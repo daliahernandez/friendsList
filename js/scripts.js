@@ -3,13 +3,13 @@ $(document).ready(function(){
 
     var idTags = ['fOne', 'fTwo', "fThree"]
 
-  //  var userAnswers = []
+   var userAnswers = []
     idTags.forEach(function(idTags){
       var userInput = $('input#' + idTags).val();
-    //  userAnswers.push(userInput)
+      userAnswers.push(userInput)
     });
 
-    $('.friendList').text(userInput);
+    $('.friendList').text(userAnswers);
     event.preventDefault();
   });
 });
